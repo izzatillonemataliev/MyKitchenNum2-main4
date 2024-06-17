@@ -1,0 +1,95 @@
+{
+  "recipies": [
+    {
+      "id": "2",
+      "title": "Mastava",
+      "img": "https://chaihana19.ru/wp-content/uploads/2021/04/Машхурда.jpg",
+      "ingredients": [
+        "guruch",
+        "sabzi",
+        "go'sht",
+        "yog'",
+        "piyoz",
+        "kartoshka",
+        "tuz",
+        "suv",
+        "bolgarskiy-qalampir",
+        "pomidor"
+      ],
+      "cookingTime": "60 minutes",
+      "method": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel nihil tenetur rerum eos architecto delectus suscipit adipisci aut ut porro consequatur ipsum error voluptate facere sequi dicta, at sit nobis inventore sapiente placeat possimus! Id, libero. Ullam et architecto facilis magnam nobis odit repellat quam, impedit veniam tempore. Sapiente!"
+    },
+    {
+      "id": "3",
+      "title": "Sho'rva",
+      "img": "https://gzeli-dostavka.ru/uploads/webp/catalog/piccy/shurpasbaraninoj.webp",
+      "ingredients": [
+        "sabzi",
+        "go'sht",
+        "yog'",
+        "piyoz",
+        "kartoshka",
+        "tuz",
+        "suv",
+        "bolgarskiy-qalampir",
+        "pomidor"
+      ],
+      "cookingTime": "60 minutes",
+      "method": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel nihil tenetur rerum eos architecto delectus suscipit adipisci aut ut porro consequatur ipsum error voluptate facere sequi dicta, at sit nobis inventore sapiente placeat possimus! Id, libero. Ullam et architecto facilis magnam nobis odit repellat quam, impedit veniam tempore. Sapiente!"
+    },
+    {
+      "id": "1ec2",
+      "title": "osh",
+      "cookingTime": "120 minutes",
+      "method": "kop qadamka boir davay",
+      "img": "https://www.prpreston.ru/upload/iblock/796/796419a36b7bc5994e51c06097714f8b.jpg",
+      "ingredients": [
+        "gosh",
+        "piez",
+        "guruch",
+        "suv"
+      ]
+    },
+    {
+      "id": "ef9e",
+      "title": "BRITANSKIY ZAVTRAK SOSISKAMI ",
+      "cookingTime": "15 minutes",
+      "method": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quisquam repellat molestiae reiciendis cum, mollitia non eveniet doloribus maiores.",
+      "img": "https://wallbox.ru/resize/1920x1200/wallpapers/main2/201718/eda-doski-tarelka-sosiska-kartofel-vtorye-bluda.jpg",
+      "ingredients": [
+        "sosiski",
+        "yoq",
+        "tuz",
+        "tuhum"
+      ]
+    },
+    {
+      "id": "c1e3",
+      "title": " Паэлья",
+      "cookingTime": "40 minutes",
+      "method": "Паэлья - это традиционное испанское блюдо, состоящее из риса, морепродуктов, овощей, иногда мяса и ароматных специй, таких как шафран. Готовится паэлья на большом плоском сковороде с двумя ручками, которая также называется паэльей.",
+      "img": "https://kartinkof.club/uploads/posts/2023-08/1691457090_kartinkof-club-p-kartinki-na-prazdnik-vsemirnii-den-valensi-38.jpg",
+      "ingredients": [
+        " Конечно! В паэлью обычно входят следующие основные ингредиенты:  Рис: основной компонент, который обычно используется для приготовления паэльи. Важно выбирать специальный сорт риса для паэльи, такой как бомба или кальроза, который хорошо впитывает жидкость и сохраняет форму.  Морепродукты: креветки, мидии, кальмары - самые популярные виды морепродуктов, которые добавляются в паэлью. Однако иногда можно также использовать морского окуня или другие виды рыбы.  Овощи: лук, чеснок, помидоры, красный перец, горошек - это лишь некоторые из овощей, которые могут использоваться в паэлье. Овощи обычно нарезаются кубиками или полукольцами.  Шафран: это специя, которая придает паэлье характерный желтый цвет и уникальный вкус. Обычно шафран добавляется в бульон или воду, чтобы придать рису и овощам цвет и аромат.  Бульон: для готовки риса и придания ему вкуса обычно используется куриной или рыбный бульон. Некоторые рецепты также предлагают использовать овощной бульон.  Масло: обычно оливковое масло используется для обжаривания ингредиентов и приготовления паэльи.  Приправы: соль, перец, паприка - это некоторые из приправ, которые могут использоваться для придания вкуса паэлье."
+      ]
+    },
+    {
+      "id": "fec9",
+      "title": "gg seil",
+      "cookingTime": "10 minutes",
+      "method": "go gaming bro",
+      "img": "https://ciroccodentalcenterpa.com/wp-content/uploads/foods-fight-plaque.jpg",
+      "ingredients": [
+        "gg",
+        "hh",
+        "jj",
+        "kk",
+        "ll",
+        "ff",
+        "dd",
+        "ss",
+        "aa"
+      ]
+    }
+  ]
+}
