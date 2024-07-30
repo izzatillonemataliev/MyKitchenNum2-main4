@@ -1,53 +1,58 @@
-import { useSignUp } from "../hooks/useSignUp"
+import { useSignUp } from "../hooks/useSignUp";
 import { FcGoogle } from "react-icons/fc";
-import { Link , Form, useActionData} from "react-router-dom";
-
+import { Link, Form, useActionData } from "react-router-dom";
 import FormInput from "../components/FormInput";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-
-export const action = async ({request}) => {
+export const action = async ({ request }) => {
   let formData = await request.formData();
   let name = formData.get("Name");
   let photo = formData.get("Photo");
   let email = formData.get("Email");
   let password = formData.get("Password");
 
-  return  { name , photo , email , password };
+  return { name, photo, email, password };
 }
 
 function Signup() {
   let userSignup = useActionData();
-
-  const {signupWithGoogle , signupWithEmailAndPassword , user , error} = useSignUp()
+  const { signupWithGoogle, signupWithEmailAndPassword, user, error } = useSignUp();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (userSignup) {
-      signupWithEmailAndPassword(userSignup.name, userSignup.photo, userSignup.email , userSignup.password)
+      setLoading(true);
+      signupWithEmailAndPassword(userSignup.name, userSignup.photo, userSignup.email, userSignup.password)
+        .finally(() => setLoading(false));
     }
-  } , [userSignup])
+  }, [userSignup, signupWithEmailAndPassword]);
 
-    return (
-      <div className="min-h-screen grid place-items-center">
-       <div className="max-w-96 w-full text-center">
-       <h2 className="font-bold text-4xl mb-10">Signup</h2>
-       <Form method="POST">
-       <FormInput type="text" label="Name:" name="Name"/>
-       <FormInput type="url" label="PhotoUrl" name="Photo"/>
-       <FormInput type="email" label="Email:" name="Email"/>
-       <FormInput type="password" label="Password:" name="Password"/>
-        <div>
-         <button className="btn btn-secondary w-full mb-3" type="submit">Submit</button>
-          <button type="button" onClick={signupWithGoogle} className="btn btn-secondary w-full mb-5">
-           <FcGoogle className="text-3xl"/>
-            <span className="text-2xl">Google</span></button>
-            <p><Link className="hover:text-violet-600 " to="/signin">Are you already registered? Login</Link></p>
-        </div>
-       </Form>
-       </div>
-          
+  return (
+    <div className="signup-background">
+      <div className="max-w-96 w-full text-center bg-black p-8 rounded shadow-md">
+        <h2 className="font-bold text-4xl mb-10">Ro'yxatdan o'tish</h2>
+        {error && <div className="text-red-500 mb-4">{error}</div>}
+        {loading ? (
+          <div>Yuklanmoqda...</div>
+        ) : (
+          <Form method="post">
+            <FormInput type="text" label="Ism:" name="Name" required />
+            <FormInput type="url" label="Rasm URL:" name="Photo" required />
+            <FormInput type="email" label="Email:" name="Email" required />
+            <FormInput type="password" label="Parol:" name="Password" required minLength="6" />
+            <div>
+              <button className="btn btn-secondary w-full mb-3" type="submit">Yuborish</button>
+              <button type="button" onClick={signupWithGoogle} className="btn btn-secondary w-full mb-5">
+                <FcGoogle className="text-3xl" />
+                <span className="text-2xl">Google</span>
+              </button>
+              <p><Link className="hover:text-violet-600" to="/signin">Ro'yxatdan o'tganmisiz? Kirish</Link></p>
+            </div>
+          </Form>
+        )}
       </div>
-    )
-  }
-  
-export default Signup
+    </div>
+  );
+}
+
+export default Signup;

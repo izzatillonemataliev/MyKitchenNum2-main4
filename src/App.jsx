@@ -14,7 +14,7 @@ import SingleRecipie from './pages/SingleRecipe'
 
 // components
 import ProtectedRotes from './components/ProtectedRotes'
-import Navbar from './components/Navbar'
+
 
 //context
 import { useContext, useEffect } from 'react'

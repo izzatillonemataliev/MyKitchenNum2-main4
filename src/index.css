@@ -8,3 +8,23 @@
         @apply max-w-[1200px] w-full px-5 mx-auto
     }
 }
+
+/* Add this to your CSS file */
+.signup-background {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/021/026/original/top-view-stop-motion-vegetables-and-a-pan-on-black-background-free-video.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+/* Add this to your CSS file */
+.signin-background {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/021/026/original/top-view-stop-motion-vegetables-and-a-pan-on-black-background-free-video.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+    
